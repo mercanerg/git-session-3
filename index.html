@@ -1,0 +1,377 @@
+<!-- <style>
+    .header-of-page {
+      top: 80px;
+      z-index: 10;
+    }
+
+    .banner-mp-ad {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 20;
+      display: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 80px;
+      background: url("/enUS/images/blackFriday/top_banner.png?v=2") no-repeat center;
+      background-size: auto 100%;
+      overflow: hidden;
+      text-align: center;
+      line-height: 80px;
+    }
+
+    .banner-mp-ad a{
+      display: inline-block;
+      width: 180px;
+      line-height: 48px;
+      background: #fff;
+      color: #FF7050;
+      cursor: pointer;
+      border-radius: 48px;
+      margin-left: 30px;
+      font-weight: 600;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+    }
+
+    .banner-mp-ad a:hover {
+      opacity: .9;
+    }
+
+    .banner-mp-ad .global-count-down {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .banner-mp-ad .img1 {
+      display: inline-block;
+      max-width: 302px;
+      vertical-align: middle;
+    }
+    .banner-mp-ad .img2 {
+      display: inline-block;
+      max-width: 85px;
+      vertical-align: bottom;
+      margin: 0 18px 0 25px;
+    }
+
+    .banner-mp-ad .img3 {
+      vertical-align: middle;
+      max-width: 220px;
+      width: calc(100% - 220px);
+      display: none;
+      margin-right: 10px;
+    }
+
+    .banner-ad-title {
+      font-size: 18px;
+      color: #fff;
+      display: inline-block;
+      margin: 0 auto;
+      vertical-align: middle;
+      font-weight: bold;
+    }
+
+    .banner-ad-title span {
+      font-weight: bold;
+      color: #FFED4A;
+    }
+
+    .banner-ad-btn {
+      color: #fff;
+      display: inline-block;
+      background-color: #fe4066;
+      width: 100px;
+      height: 28px;
+      border: 2px solid #fff;
+      font-size: 14px;
+      line-height: 28px;
+      border-radius: 14px;
+      vertical-align: middle;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    #close-ad {
+      width: 24px;
+      position: absolute;
+      top: 30px;
+      right: 12px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .pop-box {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 11;
+      display: none;
+    }
+
+    .pop-box-bg {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .pop-box-inner {
+      width: 92%;
+      max-width: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 13;
+    }
+
+    .tobuy {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 300px;
+    }
+
+    .pop-box img {
+      width: 100%;
+      display: block;
+    }
+
+    .pop-close {
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 30px;
+      height: 30px;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+    }
+
+    .pop-close i {
+      font-size: 15px;
+    }
+
+    .pop-close:hover {
+      opacity: .7;
+    }
+    @media screen and (max-width: 1000px) {
+      .banner-mp-ad a {
+        width: 140px;
+        line-height: 40px;
+        border-radius: 40px;
+        margin-left: 15px;
+      }
+      .banner-mp-ad .img2 {
+        display: none;
+      }
+      .banner-mp-ad .img1 {
+        margin-right: 15px;
+      }
+    }
+    @media screen and (max-width: 999px){
+      .header-of-page.active .header-content .ph-head {
+        top: 60px;
+      }
+      .pop-box-inner {
+        width: 70%;
+      }
+    }
+    @media screen and (max-width: 850px){
+      /*.header-of-page{*/
+      /*  top: 40px;*/
+      /*}*/
+      .banner-mp-ad a {
+        margin-left: 0;
+      }
+      .banner-mp-ad .img1 {
+        margin-right: 10px;
+      }
+      .banner-ad-btn {
+          width: 100px;
+          margin-left: 6px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .banner-mp-ad .img1 {
+        display: none;
+      }
+      .banner-mp-ad .img3 {
+        display: inline-block;
+      }
+
+      .banner-mp-ad a {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        font-weight: 400;
+        line-height: 36px;
+        border-radius: 36px;
+        font-size: 12px;
+        opacity: 0;
+        filter: alpha(opacity = 0);
+        -webkit-transition: 0s;
+        -moz-transition: 0s;
+        -ms-transition: 0s;
+        -o-transition: 0s;
+        transition: 0s;
+      }
+      .banner-mp-ad a:hover {
+        opacity: 0;
+        filter: alpha(opacity = 0);
+      }
+    }
+    @media screen and (max-width: 540px){
+      .pop-box-inner {
+        max-width: 600px;
+      }
+      .banner-mp-ad {
+        height: 60px;
+        background-image: url("/enUS/images/blackFriday/top_banner_.png?v=2");
+        line-height: 60px;
+        background-size: cover;
+      }
+      #close-ad {
+        display: none;
+      }
+    }
+  </style>
+  <div class="banner-mp-ad" id="banner-mp-ad">
+    <img src="/enUS/images/blackFriday/text1.png" alt="" class="img1">
+    <img src="/enUS/images/blackFriday/panda.png" alt="" class="img2">
+    <img src="/enUS/images/blackFriday/text1_.png" alt="" class="img3">
+    <ul class="global-count-down">
+    <li class="li1" id="time1"></li>
+    <li class="li2" id="time2"></li>
+    <li class="li3" id="time3"></li>
+    <li class="li4" id="time4"></li>
+</ul>
+
+<script>
+
+  $(function() {
+    var firstLeftTime = JSON.parse('-8022934795');
+    function countTime(leftTime) {
+      if ($('.end-time').hasClass('close')) {
+        return;
+      }
+
+      //定义变量 d,h,m,s保存倒计时的时间
+      var d = 0;
+      var h = 0;
+      var m = 0;
+      var s = 0;
+      if (leftTime >= 0) {
+        d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+        h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+        m = Math.floor(leftTime / 1000 / 60 % 60);
+        s = Math.floor(leftTime / 1000 % 60);
+      }
+      //将倒计时赋值到div中
+      document.getElementById("time1").innerHTML = d < 10 ? `0${d}` : d;
+      document.getElementById("time2").innerHTML = h < 10 ? `0${h}` : h;
+      document.getElementById("time3").innerHTML = m < 10 ? `0${m}` : m;
+      document.getElementById("time4").innerHTML = s < 10 ? `0${s}` : s;
+      if ($('.end-time').hasClass('init')) {
+        $('.end-time').removeClass('init');
+      }
+      //递归每秒调用countTime方法，显示动态时间效果
+      setTimeout(function () {
+        countTime(leftTime - 1000);
+      }, 1000);
+    }
+
+    if (firstLeftTime <= 0) {
+      document.getElementById("time1").innerHTML = '0';
+      document.getElementById("time2").innerHTML = '0';
+      document.getElementById("time3").innerHTML = '0';
+      document.getElementById("time4").innerHTML = '0';
+    } else {
+      countTime(firstLeftTime);
+    }
+
+  })
+</script>
+
+
+
+    <a href="/buy/black-friday#10users" target="_blank">Shop now</a>
+    <img src="/mockStatic/images/close-dailog-white.png" id="close-ad" alt="close">
+  </div>
+
+  <section class="pop-box" style="display: block">
+    <div class="pop-box-bg"></div>
+    <div class="pop-box-inner">
+      <img class="pop-imgs" src="/enUS/images/blackFriday/pups.png?v=1">
+      <a class="tobuy close-pup-button"></a>
+      <div class="pop-close close-pup-button">
+        <i class="iconfont icon_demo_close"></i>
+      </div>
+    </div>
+  </section>
+  <script>
+    var $banner = $('#banner-mp-ad');
+    var $close = $('#banner-mp-ad #close-ad');
+    var $header = $('header');
+    var name = 'idoc_ad_banner_blackFriday2021_';
+    var endtime = '2021/12/30';
+
+    function closeBanner() {
+      $banner.hide();
+      $header.css({'top': 0});
+    }
+
+    function writeCookie() {
+      var end = new Date(endtime);
+      document.cookie = name + "=" + ";expires=" + end;
+    }
+
+
+    $close.click(function () {
+      closeBanner();
+    });
+
+    if (!/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent) && document.body.clientWidth > 539) {
+      $banner.show();
+      $header.css({'top': 80});
+    } else {
+      $banner.show();
+      $header.css({'top': 60});
+    }
+
+    window.addEventListener('resize', function () {
+      if (!/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent) && document.body.clientWidth > 539) {
+        $banner.show();
+        $header.css({'top': 80});
+      } else {
+        $banner.show();
+        $header.css({'top': 60});
+      }
+    });
+
+    var $closePupButton = $('.close-pup-button');
+
+    $closePupButton.click(function () {
+      $('.pop-box').hide();
+      window.open('/buy/black-friday');
+      writeCookie();
+    });
+
+    if(document.cookie.indexOf(name) === -1) {
+      $('.pop-box').show();
+    } else {
+      $('.pop-box').hide();
+    }
+  </script> -->
