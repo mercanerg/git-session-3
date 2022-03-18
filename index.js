@@ -1,4 +1,4 @@
-const cars = ["BMW", "Volvo", "Mini"];
+const cars = ["BMW", "Volvo", "Mini", "Porche", "Ferrari"];
 
 let text = "";
 for (let x of cars) {
