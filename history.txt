@@ -1,0 +1,223 @@
+    1  pwd
+    2  mkdir gitproject
+    3  cd git*
+    4  ls
+    5  ll
+    6  rmdir project1
+    7  mkdir project1
+    8  cd pro*
+    9  touch index.htm
+   10  ll
+   11  rmd index*
+   12  rm index*
+   13  ll
+   14  touch index.html
+   15  vi index.html
+   16  cat index.html
+   17  git version
+   18  git config --global user.name "martin"
+   19  git config --global user.mail "marweg@gmail.com"
+   20  git config --list
+   21  ll
+   22  git init
+   23  ll
+   24  cat .git/config
+   25  git status
+   26  git log
+   27  git add index.html
+   28  git status
+   29  git commit -m "Committing index.html was created 3/6/2022"
+   30  git status
+   31  git log
+   32  log --oneline
+   33  git status
+   34  git add .
+   35  git status
+   36  git commit -m "Modified index.html to a happier message"
+   37  git status
+   38  rm -rf .git/
+   39  ll
+   40  git init
+   41  git remote add https://github.com/mercanerg
+   42  git remote add origin https://github.com/mercanerg
+   43  ll
+   44  dir .git/
+   45  git commit -m “Commit message”
+   46  ll
+   47  git add .
+   48  ll
+   49  git status
+   50  git commit -m “Commit message”
+   51  git commit -m "index.html created"
+   52  git status
+   53  git log
+   54  git commit -m "Modified index.html to a happier message"
+   55  git log
+   56  git log --oneline
+   57  git commit -m "hello message"
+   58  tree
+   59  sudo apt install tree
+   60  tree
+   61  pip install tree
+   62  git checkout master
+   63  cat index.html
+   64  ll
+   65  rm -rf .git/
+   66  ll
+   67  ls
+   68  git init
+   69  git remote add origin https://github.com/mercanerg
+   70  git commit -m "RCN Soft in Git"
+   71  git add index.html
+   72  ll
+   73  git status
+   74  git commit -m "RCN Soft in Git"
+   75  git log
+   76  git push -f origin master
+   77  ll
+   78  cd .git
+   79  ll
+   80  cat COMMIT_EDITMSG
+   81  cat index
+   82  cat config
+   83  cd..
+   84  cd ..
+   85  git config --global user.name "mercan"
+   86  git config --global user.mail "ercanereglioglu@gmail.com"
+   87  git status
+   88  git log
+   89  commit -m " work harder, speak less"
+   90  git commit -m "work harder, speak less"
+   91  git log
+   92  git config --list
+   93  git status
+   94  ll
+   95  git config --list
+   96  rm -rf .git
+   97  ll
+   98  git init
+   99  ll
+  100  git status
+  101  touch .gitignore
+  102  vi .gitignore
+  103  ll
+  104  cat .gitignore
+  105  git status
+  106  git add .gitignore
+  107  git status
+  108  git add -al
+  109  git add -A
+  110  git status
+  111  git reset index.html
+  112  git status
+  113  git reset
+  114  git status
+  115  git add -A
+  116  git status
+  117  git commit -m "very important changing"
+  118  git log
+  119  PWD
+  120  pwd
+  121  ll
+  122  ls
+  123  cd gitproject
+  124  ll
+  125  cd project1
+  126  ll
+  127  cd ..
+  128  git init
+  129  git rm --cached
+  130  git log
+  131  git checkout -b master
+  132  git status
+  133  git checkout -martin
+  134  git checkout -b martin
+  135  git merge
+  136  git merge master
+  137  git commit "hello merge"
+  138  git
+  139  git pull
+  140  git https://github.com/mercanerg?tab=repositories master
+  141  git --help
+  142  cd ..
+  143  git config --global credintial.helper store
+  144  ll
+  145  nano .gitconfig
+  146  ls
+  147  mkdir first-repo
+  148  cd fir*
+  149  git init
+  150  ll
+  151  nano README.md
+  152  ll
+  153  git add .
+  154  git commit -m "First commit"
+  155  git status
+  156  git branch -M main
+  157  git status
+  158  git remote add origin https://github.com/mercanerg/first-repo.git
+  159  git push -u origin main
+  160  git config --global credential.helper store
+  161  git push -u origin main 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
+  162  git push -u origin main
+  163  cat README.md
+  164  nano README.md
+  165  git commit -m "add new line to README.md"
+  166  git add .
+  167  git status
+  168  git commit -m "add new line to README.md"
+  169  git push -u origin main
+  170  cd ..
+  171  mkdir secondrepo
+  172  cd secon*
+  173  ll
+  174  git init
+  175  nano README.md
+  176  git add .
+  177  git status
+  178  git commit -m " secondrepo was created"
+  179  git branc -M main
+  180  git branch -M main
+  181  git config --global credential.helper store 
+  182  git remote add origin https://github.com/mercanerg/secondrepo.git
+  183  git push -u origin main
+  184  git push -u origin master
+  185  nano README.md
+  186  git status
+  187  git add .
+  188  git status
+  189  git clone https://github.com/mercanerg/third-repo.git
+  190  cd th*
+  191  cd ..
+  192  git clone https://github.com/mercanerg/third-repo.git
+  193  ls
+  194  cd th*
+  195  ls
+  196  git init
+  197  nano pyt.py
+  198  git add .
+  199  git status
+  200  git commit -m "python file was created"
+  201  git push
+  202  cd ..
+  203  git clone https://github.com/mercanerg/git-session-3.git
+  204  ls
+  205  cd git-s*
+  206  ls
+  207  nano index.js
+  208  nano test.py
+  209  nano index.html
+  210  ls
+  211  git add .
+  212  git status
+  213  git commit -m "new files were added in project"
+  214  git push
+  215  git pull
+  216  nano index.js
+  217  git status
+  218  git add .
+  219  git commit -m "new line was added in index.js"
+  220  git push
+  221  cd ..
+  222  cd git-s*
+  223  history>history.txt
